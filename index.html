@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
   <style>
     /* Make the image fully responsive */
     .carousel-inner img {
@@ -22,183 +24,185 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="#"></a>
+  <div class="container-fluid">
 
-    <img class="logo-xs" src="/images/aadhaar_english_logo.svg" alt="Aadhaar" style="min-height: 57px;">
-    <img class="logo-xs" src="/images/uidai_english_logo.svg" alt="Aadhaar" style="min-height: 57px;">
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark sticky-top">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#"></a>
 
-    </a>
+      <img class="logo-xs" src="/images/aadhaar_english_logo.svg" alt="Aadhaar" style="min-height: 57px;">
+      <img class="logo-xs" src="/images/uidai_english_logo.svg" alt="Aadhaar" style="min-height: 57px;">
 
+      </a>
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item  ">
-        <a class="nav-link" href="/pages/AboutUs.html">About Us</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="/pages/ContactUs.html">Contact Us</a>
-      </li>
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/pages/FAQ.html" id="navbardrop" data-toggle="dropdown" data-toggle="tooltip"
-          title="Frequently Asked Questions">
-          FAQs
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="/pages/FAQ.html">Use Aadhaar Freely</a>
-          <a class="dropdown-item" href="/pages/FAQ.html">E-Aadhaar</a>
-          <a class="dropdown-item" href="/pages/FAQ.html">mAadhaar FAQs</a>
-          <a class="dropdown-item" href="/pages/FAQ.html">Aadhaar Paperless offline e-kyc</a>
-        </div>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="/pages/Help.html">Help</a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="/pages/Feedback.html">Feedback</a>
-      </li>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-        <form class="form-inline" action="#">
-          <input class="form-control mr-sm-2" type="text" placeholder="Click to Search">
-          <button class="btn btn-success " type="submit">Search</button>
-        </form>
-      </nav>
-
-      <li class="nav-item ">
-        <a class="nav-link" href="/pages/SignIn.html">Sign in</a>
-      </li>
-
-      <li class="nav-item ">
-        <a class="nav-link" href="/pages/SignUp.html">Sign Up</a>
-      </li>
-
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          Select Language
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">हिन्दी</a>
-          <a class="dropdown-item" href="#">English</a>
-          <a class="dropdown-item" href="#">मराठी</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Marquee -->
-  <marquee onmouseover="this.stop();" onmouseout="this.start();" style="font-size: large;">
-    <a href="/pages/AAD.html" style="color: brown; font-style: italic;">To add Aadhaar details click here</a>
-  </marquee>
-
-  <!-- Carousel -->
-  <div id="demo" class="carousel slide" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-      <li data-target="#demo" data-slide-to="3"></li>
-    </ul>
-
-    <!-- The slideshow -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/images/Welcome-My-Aadhaar_Web.png" alt="Welcome to Aadhaar Portal" width="1100" height="500">
-      </div>
-      <div class="carousel-item">
-        <img src="/images/New-mAadhaar.jpg"
-          alt="The new mAadhaar mobile app is now available for Android on Google Play and iOS on App Store"
-          title="New mAadhaar" width="1100" height="500">
-      </div>
-      <div class="carousel-item">
-        <img src="/images/New-eAadhaar.jpg" alt="Now downloaded Aadhaar and hard copy Aadhaar are same."
-          title="New eAadhaar" width="1100" height="500">
-      </div>
-      <div class="carousel-item">
-        <img src="/images/Ask-Aadhaar-Chatbot.jpg"
-          alt="Now you can Chat with Aadhaar with the 'Ask Aadhaar' chat service" title="Aadhaar Chatbot" width="1100"
-          height="500">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
-
-  <div class="card-deck">
-    <div class="card bg-light">
-      <div class="card-body text-center">
-        <a href="/pages/AboutUs.html">What is Aadhaar ></a>
-        <p class="card-text">Aadhaar number is a 12-digit random number issued by the UIDAI (“Authority”) to the
-          residents of India after satisfying the verification process laid down by the Authority. Any individual,
-          irrespective of age and gender, who is a resident of India, may voluntarily enrol to obtain Aadhaar number.
-          Person willing to enrol has to provide minimal demographic and biometric information during the enrolment
-          process which is totally free of cost. An individual needs to enrol for Aadhaar only once and after
-          de-duplication only one Aadhaar shall be generated, as the uniqueness is achieved through the process of
-          demographic and biometric de-duplication.</p>
-      </div>
-    </div>
-
-    <div class="card bg-light">
-      <div class="card-body text-center">
-        <a href="/pages/AboutUs.html">Aadhaar Ecosystem ></a>
-        <p class="card-text">Enrolment Ecosystem consists of Registrars and Enrolment Agencies. Registrar is an entity authorised or recognized by UIDAI for the purpose of enrolling individuals. Enrolment Agencies are appointed by Registrars and are responsible for collecting demographic and biometric information of individuals during the enrolment process by engaging certified Operators/Supervisors.
- In co-ordination with the Registrars, the Enrolment Agencies set up Enrolment Centres, where residents can enrol for Aadhaar. Multiple fingerprint scanners, iris scanners, and cameras used for enrolment are certified by STQC and UIDAI, and all connect to the UIDAI designed standard Application Programming Interface (API). Appointment of multiple registrars, multiple enrolment agencies, and multiple technology providers has created an environment of healthy competition within.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <!----------- Testimonials ------------>
-  <div class="card-deck">
-    <div class="container">
-      <div class="media border p-3">
-        <img src="/images/th.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-        <div class="media-body">
-          <h4>John Doe <small><i>Posted on October 26, 2020</i></small></h4>
-          <p>Great Aadhaar Card Management system to handle the data and helps reduce lots of work in the behind.</p>
-          <p>Please keep bringing such type of system software .</p>
-          <div class="media p-3">
-            <img src="/images/men-and-feelings.jpg" alt="Jane Doe" class="mr-3 mt-3 rounded-circle" style="width:45px;">
-            <div class="media-body">
-              <h4>Jane Doe <small><i>Posted on October 28 2020</i></small></h4>
-              <p>I used this system for upto a 2-3 days, it helped me continuously but please try to fix the bugs.
-              </p>
-              <p>Hope you will like my feedback.</p>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item  ">
+            <a class="nav-link" href="/pages/AboutUs.html">AboutUs</a>
+          </li>&nbsp;&nbsp;&nbsp;
+          <li class="nav-item ">
+            <a class="nav-link" href="/pages/ContactUs.html">ContactUs</a>
+          </li>&nbsp;&nbsp;&nbsp;
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/pages/FAQ.html" id="navbardrop" data-toggle="dropdown"
+              data-toggle="tooltip" title="Frequently Asked Questions">
+              FAQs
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/pages/FAQ.html">Use Aadhaar Freely</a>
+              <a class="dropdown-item" href="/pages/FAQ.html">E-Aadhaar</a>
+              <a class="dropdown-item" href="/pages/FAQ.html">mAadhaar FAQs</a>
+              <a class="dropdown-item" href="/pages/FAQ.html">Aadhaar Paperless offline e-kyc</a>
             </div>
+          </li>&nbsp;&nbsp;&nbsp;
+          <li class="nav-item ">
+            <a class="nav-link" href="/pages/Help.html">Help</a>
+          </li>&nbsp;&nbsp;&nbsp;
+          <li class="nav-item ">
+            <a class="nav-link" href="/pages/Feedback.html">Feedback</a>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/SignIn.html">Signin</a>
+          </li>&nbsp;&nbsp;&nbsp;
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/pages/SignUp.html">SignUp</a>
+          </li>&nbsp;&nbsp;&nbsp;
+
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Marquee -->
+    <marquee onmouseover="this.stop();" onmouseout="this.start();" style="font-size: large;">
+      <a href="/pages/AAD.html" style="color: brown; font-style: italic;">To add Aadhaar details click here</a>
+    </marquee>
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/Welcome-My-Aadhaar_Web.png" alt="Welcome to Aadhaar Portal" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/New-mAadhaar.jpg"
+            alt="The new mAadhaar mobile app is now available for Android on Google Play and iOS on App Store"
+            title="New mAadhaar" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/New-eAadhaar.jpg" alt="Now downloaded Aadhaar and hard copy Aadhaar are same."
+            title="New eAadhaar" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/Ask-Aadhaar-Chatbot.jpg"
+            alt="Now you can Chat with Aadhaar with the 'Ask Aadhaar' chat service" title="Aadhaar Chatbot" width="1100"
+            height="500">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <div class="card-deck">
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <a href="/pages/AboutUs.html">What is Aadhaar ></a>
+          <p class="card-text">Aadhaar number is a 12-digit random number issued by the UIDAI (“Authority”) to the
+            residents of India after satisfying the verification process laid down by the Authority. Any individual,
+            irrespective of age and gender, who is a resident of India, may voluntarily enrol to obtain Aadhaar number.
+            Person willing to enrol has to provide minimal demographic and biometric information during the enrolment
+            process which is totally free of cost. An individual needs to enrol for Aadhaar only once and after
+            de-duplication only one Aadhaar shall be generated, as the uniqueness is achieved through the process of
+            demographic and biometric de-duplication.</p>
+        </div>
+      </div>
+
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <a href="/pages/AboutUs.html">Aadhaar Ecosystem ></a>
+          <p class="card-text">Enrolment Ecosystem consists of Registrars and Enrolment Agencies. Registrar is an entity
+            authorised or recognized by UIDAI for the purpose of enrolling individuals. Enrolment Agencies are appointed
+            by Registrars and are responsible for collecting demographic and biometric information of individuals during
+            the enrolment process by engaging certified Operators/Supervisors.
+            In co-ordination with the Registrars, the Enrolment Agencies set up Enrolment Centres, where residents can
+            enrol for Aadhaar. Multiple fingerprint scanners, iris scanners, and cameras used for enrolment are
+            certified by STQC and UIDAI, and all connect to the UIDAI designed standard Application Programming
+            Interface (API). Appointment of multiple registrars, multiple enrolment agencies, and multiple technology
+            providers has created an environment of healthy competition within.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!----------- Testimonials ------------>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="media border p-3" style="height: auto;">
+          <img src="/images/th.jpg" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+          <div class="media-body">
+            <h4>John Doe <small><i>Posted on October 26, 2020</i></small></h4>
+            <p>Great Aadhaar Card Management system to handle the data and helps reduce lots of work in the behind.</p>
+            <p>Please keep bringing such type of system software .</p>
+            <div class="media p-3">
+              <img src="/images/men-and-feelings.jpg" alt="Jane Doe" class="mr-3 mt-3 rounded-circle"
+                style="width:45px;">
+              <div class="media-body">
+                <h4>Jane Doe <small><i>Posted on October 28 2020</i></small></h4>
+                <p>I used this system for upto a 2-3 days, it helped me continuously but please try to fix the bugs.
+                </p>
+                <p>Hope you will like my feedback.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------- Highlights ------------>
+      <div class="col-sm-4">
+        <div class="card container-fluid">
+          <div class="card-body">
+            <h4 class="card-title">Activities and Initiatives</h4>
+            <a href="https://www.mygov.in/aarogya-setu-app/" target="_blank"><img class="image-style-none"
+                src="/images/arogya_setu.jpg" width="199" height="87" alt="Aarogya Setu App"
+                title="Aarogya Setu App"></a>
+            <p>digital bridge to fight against covid-19</p>
+            <hr>
+            <a href="https://covid19.india.gov.in/" target="_blank"><img class="image-style-none"
+                src="/images/covid-notification.jpg" width="199" height="87" alt="COVID-19 Notifications"
+                title="COVID-19 Notifications"></a>
+            <p>one step for all covid-19 notification</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!----------- Highlights ------------>
-    <div class="card" style="width:400px">
-      <div class="card-body">
-        <h4 class="card-title">Activities and Initiatives</h4>
-        <a href="https://www.mygov.in/aarogya-setu-app/" target="_blank"><img class="image-style-none"
-            src="/images/arogya_setu.jpg" width="199" height="87" alt="Aarogya Setu App" title="Aarogya Setu App"></a>
-        <p>digital bridge to fight against covid-19</p>
-        <hr>
-        <a href="https://covid19.india.gov.in/" target="_blank"><img class="image-style-none"
-            src="/images/covid-notification.jpg" width="199" height="87" alt="COVID-19 Notifications"
-            title="COVID-19 Notifications"></a>
-        <p>one step for all covid-19 notification</p>
-      </div>
-    </div>
-  </div>
-
-  <!----------- Footer ------------>
-  <div class="container-fluid">
+    <!----------- Footer ------------>
     <footer>
       <div class="jumbotron" style="margin-bottom:0; background: #ddd;">
         <div class="row">
@@ -228,25 +232,24 @@
           </div>
           <div class="col-md-2">
             <h4>Follow Us</h4>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
+            <a href="#"><i class='fab fa-facebook' style='font-size:24px;color:rgb(24,119,242)'></i></a><br>
+            <a href="#"><i class="fab fa-linkedin" style='font-size:24px;color:rgb(0,123,182)'></i></a><br>
+            <a href="#"><i class="fab fa-instagram" style='font-size:24px;color:rgb(212,47,133)'></i></a><br>
+            <a href="#"><i class="fab fa-twitter" style='font-size:24px;color:rgb(85,172,238)'></i></a><br>
           </div>
           <div class="col-md-3">
-            <h4>Send Email at</h4>
+            <h4>Send Email at :</h4>
             <p>help@gov.uidai.gov.in</p>
-            <p>
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button"><span
-                      class="glyphicon glyphicon-envelope"></span></button>
-                </span>
-              </div><!-- /input-group -->
-            </p>
+
+
+            <div class="input-group">
+              <form class="form-inline" action="#">
+                <input type="text" class="form-control mr-sm-2" placeholder="Click to Search for...">
+                <button class="btn btn-success " type="submit">Search</button>
+              </form>
+
+            </div><!-- /input-group -->
+
           </div>
         </div>
     </footer>
@@ -254,8 +257,8 @@
     <section style="text-align:center; margin:10px auto;">
       <p>Designed by Sanket Wakekar</p>
     </section>
-  </div>
 
+  </div>
 
 
 
