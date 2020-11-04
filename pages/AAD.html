@@ -16,6 +16,11 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    #submit:hover {
+  background-color: rgb(40,167,69);
+  color: white;
+}
   </style>
 
 
@@ -61,7 +66,7 @@
           <ul>
             <li>
               <h5>Image</h5>
-              <input type="file" class="form-control-file" id="myfile" name="myfile">
+              <input type="file" class="form-control-file" id="myfile" name="myfile" required>
             </li><br>
 
             <li>
@@ -226,7 +231,7 @@
           </ul>
 
           <div class="button-box col-lg-12">
-            <button class="btn btn-primary " type="submit">Submit form</button>
+            <button class="btn btn-primary " type="submit" id="submit">Submit form</button>
             <button class="btn btn-primary" type="reset">Clear</button>
           </div>
 
